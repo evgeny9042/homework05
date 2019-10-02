@@ -5,6 +5,7 @@ compiler:
   
 before_script:
   - sudo apt-get install libboost-test-dev -y
+  - sudo apt-get install doxygen
 
 script:
   - mkdir build
@@ -12,9 +13,15 @@ script:
   - cmake ..
   - cmake --build .
   - cmake --build . --target package
+  - cd ..
+  - doxygen Doxyfile
+  - cd build
+  - curl -T editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uevgeny9042:$BINTRAY_API_KEY "https://api.bintray.com/content/rtti/homework/homework05/$TRAVIS_BUILD_NUMBER/editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
 
 deploy:
-  provider: script
+  provider: pages
   skip_cleanup: true
-  script:
-  - curl -T editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uevgeny9042:$BINTRAY_API_KEY "https://api.bintray.com/content/rtti/homework/homework05/$TRAVIS_BUILD_NUMBER/editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
