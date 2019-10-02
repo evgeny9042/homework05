@@ -1,0 +1,75 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_i_object}{I\+Object}
+\item 
+struct \hyperlink{struct_rectangle}{Rectangle}
+\item 
+struct \hyperlink{struct_circle}{Circle}
+\item 
+struct \hyperlink{struct_i_proc_operation}{I\+Proc\+Operation}
+\item 
+class \hyperlink{class_empty_document}{Empty\+Document}
+\item 
+class \hyperlink{class_document_with_object}{Document\+With\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692}{operation} \{ \\*
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692abc3e8393d05b53e2d60c440fe93a15e3}{\+\_\+create\+\_\+doc} = 2, 
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692aec3028bc4e4950ca6463cea5777a35cb}{\+\_\+import\+\_\+doc} = 3, 
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a9b75a6008b7fcc66f489ee4b83fe93d5}{\+\_\+export\+\_\+doc} = 4, 
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a1b7e6e9e7f52473f69d9660a3e399fd2}{\+\_\+create\+\_\+obj} = 5, 
+\\*
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a4c8b2e378e76d6e889f4472bedb0f325}{listall\+\_\+obj} = 6, 
+\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a160c18d46dc10b33ac4f345ad6666fc3}{\+\_\+delete\+\_\+obj} = 7
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{main.\+cpp@{main.\+cpp}!operation@{operation}}
+\index{operation@{operation}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{operation}{operation}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf operation}}\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{\+\_\+create\+\_\+doc@{\+\_\+create\+\_\+doc}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!\+\_\+create\+\_\+doc@{\+\_\+create\+\_\+doc}}\item[{\em 
+\+\_\+create\+\_\+doc\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692abc3e8393d05b53e2d60c440fe93a15e3}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692abc3e8393d05b53e2d60c440fe93a15e3}
+}]\index{\+\_\+import\+\_\+doc@{\+\_\+import\+\_\+doc}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!\+\_\+import\+\_\+doc@{\+\_\+import\+\_\+doc}}\item[{\em 
+\+\_\+import\+\_\+doc\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692aec3028bc4e4950ca6463cea5777a35cb}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692aec3028bc4e4950ca6463cea5777a35cb}
+}]\index{\+\_\+export\+\_\+doc@{\+\_\+export\+\_\+doc}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!\+\_\+export\+\_\+doc@{\+\_\+export\+\_\+doc}}\item[{\em 
+\+\_\+export\+\_\+doc\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a9b75a6008b7fcc66f489ee4b83fe93d5}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a9b75a6008b7fcc66f489ee4b83fe93d5}
+}]\index{\+\_\+create\+\_\+obj@{\+\_\+create\+\_\+obj}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!\+\_\+create\+\_\+obj@{\+\_\+create\+\_\+obj}}\item[{\em 
+\+\_\+create\+\_\+obj\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a1b7e6e9e7f52473f69d9660a3e399fd2}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a1b7e6e9e7f52473f69d9660a3e399fd2}
+}]\index{listall\+\_\+obj@{listall\+\_\+obj}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!listall\+\_\+obj@{listall\+\_\+obj}}\item[{\em 
+listall\+\_\+obj\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a4c8b2e378e76d6e889f4472bedb0f325}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a4c8b2e378e76d6e889f4472bedb0f325}
+}]\index{\+\_\+delete\+\_\+obj@{\+\_\+delete\+\_\+obj}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!\+\_\+delete\+\_\+obj@{\+\_\+delete\+\_\+obj}}\item[{\em 
+\+\_\+delete\+\_\+obj\hypertarget{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a160c18d46dc10b33ac4f345ad6666fc3}{}\label{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692a160c18d46dc10b33ac4f345ad6666fc3}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char const $\ast$argv[])}{main(int argc, char const *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{}\label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}

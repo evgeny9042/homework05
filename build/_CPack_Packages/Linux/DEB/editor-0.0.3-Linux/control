@@ -1,0 +1,9 @@
+Package: editor
+Version: 0.0.3
+Section: devel
+Priority: optional
+Architecture: amd64
+Installed-Size: 114
+Maintainer: egavrilin90@gmail.com
+Description: editor built using CMake
+
