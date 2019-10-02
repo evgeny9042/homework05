@@ -10,17 +10,17 @@ Include dependency graph for main.\+cpp\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{struct_i_object}{I\+Object}
-\item 
+\begin{DoxyCompactList}\small\item\em Интерфейс объекта \end{DoxyCompactList}\item 
 struct \hyperlink{struct_rectangle}{Rectangle}
-\item 
+\begin{DoxyCompactList}\small\item\em Прямоугольник \end{DoxyCompactList}\item 
 struct \hyperlink{struct_circle}{Circle}
-\item 
+\begin{DoxyCompactList}\small\item\em Круг \end{DoxyCompactList}\item 
 struct \hyperlink{struct_i_proc_operation}{I\+Proc\+Operation}
-\item 
+\begin{DoxyCompactList}\small\item\em интерфейс состояния конечного автомата \end{DoxyCompactList}\item 
 class \hyperlink{class_empty_document}{Empty\+Document}
-\item 
+\begin{DoxyCompactList}\small\item\em Состояние -\/ пустой документ \end{DoxyCompactList}\item 
 class \hyperlink{class_document_with_object}{Document\+With\+Object}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Состояние -\/ не пустой документ (содержет сколько-\/то объектов) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 

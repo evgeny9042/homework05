@@ -2,6 +2,11 @@
 \label{class_document_with_object}\index{Document\+With\+Object@{Document\+With\+Object}}
 
 
+Состояние -\/ не пустой документ (содержет сколько-\/то объектов)  
+
+
+
+
 Inheritance diagram for Document\+With\+Object\+:
 % FIG 0
 
@@ -17,18 +22,21 @@ using \hyperlink{class_document_with_object_a955b8e449e2c7a393594163f3a122770}{o
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_document_with_object_aa084d636c7cc75deca1df00a3a0edbe9}{Document\+With\+Object} (\hyperlink{class_document_with_object_a955b8e449e2c7a393594163f3a122770}{objects\+\_\+t} \&\&d)
-\item 
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
 \hyperlink{class_document_with_object_a55bdb2e586b8afdaa86d6770a4829aa1}{Document\+With\+Object} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
 \hyperlink{class_document_with_object_a8dd13839e413d14652e6a83dee68e0b4}{$\sim$\+Document\+With\+Object} ()=default
-\item 
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\item 
 \hyperlink{struct_i_proc_operation}{I\+Proc\+Operation} $\ast$ \hyperlink{class_document_with_object_a97b7ac150c854626ceb8cc4af4c0766e}{process} (\hyperlink{main_8cpp_ad34e7fb3c33543e9f3a1e48486fa7692}{operation} op) override
-\item 
+\begin{DoxyCompactList}\small\item\em образобать действие пользователя \end{DoxyCompactList}\item 
 bool \hyperlink{class_document_with_object_a1c7dddf954158f79c4ebb061a8228502}{insert} (std\+::pair$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \hyperlink{struct_i_object}{I\+Object} $>$$>$ data)
-\item 
+\begin{DoxyCompactList}\small\item\em Добавить объект \end{DoxyCompactList}\item 
 bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{delete\+\_\+obj} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em удалить объект \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Состояние -\/ не пустой документ (содержет сколько-\/то объектов) 
 
 \subsection{Member Typedef Documentation}
 \index{Document\+With\+Object@{Document\+With\+Object}!objects\+\_\+t@{objects\+\_\+t}}
@@ -44,6 +52,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 \item[{{\bf objects\+\_\+t} \&\&}]{d}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_document_with_object_aa084d636c7cc75deca1df00a3a0edbe9}{}\label{class_document_with_object_aa084d636c7cc75deca1df00a3a0edbe9}
+
+
+Конструктор 
+
 \index{Document\+With\+Object@{Document\+With\+Object}!Document\+With\+Object@{Document\+With\+Object}}
 \index{Document\+With\+Object@{Document\+With\+Object}!Document\+With\+Object@{Document\+With\+Object}}
 \subsubsection[{\texorpdfstring{Document\+With\+Object()=default}{DocumentWithObject()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Document\+With\+Object\+::\+Document\+With\+Object (
@@ -51,6 +63,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_document_with_object_a55bdb2e586b8afdaa86d6770a4829aa1}{}\label{class_document_with_object_a55bdb2e586b8afdaa86d6770a4829aa1}
+
+
+Конструктор 
+
 \index{Document\+With\+Object@{Document\+With\+Object}!````~Document\+With\+Object@{$\sim$\+Document\+With\+Object}}
 \index{````~Document\+With\+Object@{$\sim$\+Document\+With\+Object}!Document\+With\+Object@{Document\+With\+Object}}
 \subsubsection[{\texorpdfstring{$\sim$\+Document\+With\+Object()=default}{~DocumentWithObject()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Document\+With\+Object\+::$\sim$\+Document\+With\+Object (
@@ -58,6 +74,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_document_with_object_a8dd13839e413d14652e6a83dee68e0b4}{}\label{class_document_with_object_a8dd13839e413d14652e6a83dee68e0b4}
+
+
+Деструктор 
+
 
 
 \subsection{Member Function Documentation}
@@ -68,6 +88,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{}\label{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}
+
+
+удалить объект 
+
 \index{Document\+With\+Object@{Document\+With\+Object}!insert@{insert}}
 \index{insert@{insert}!Document\+With\+Object@{Document\+With\+Object}}
 \subsubsection[{\texorpdfstring{insert(std\+::pair$<$ std\+::string, std\+::unique\+\_\+ptr$<$ I\+Object $>$$>$ data)}{insert(std::pair< std::string, std::unique_ptr< IObject >> data)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Document\+With\+Object\+::insert (
@@ -75,6 +99,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 \item[{std\+::pair$<$ std\+::string, std\+::unique\+\_\+ptr$<$ {\bf I\+Object} $>$$>$}]{data}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_document_with_object_a1c7dddf954158f79c4ebb061a8228502}{}\label{class_document_with_object_a1c7dddf954158f79c4ebb061a8228502}
+
+
+Добавить объект 
+
 \index{Document\+With\+Object@{Document\+With\+Object}!process@{process}}
 \index{process@{process}!Document\+With\+Object@{Document\+With\+Object}}
 \subsubsection[{\texorpdfstring{process(operation op) override}{process(operation op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Proc\+Operation} $\ast$ Document\+With\+Object\+::process (
@@ -82,6 +110,10 @@ bool \hyperlink{class_document_with_object_acb2f51e9731ef351e1fe7b5f5098ff43}{de
 \item[{{\bf operation}}]{op}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_document_with_object_a97b7ac150c854626ceb8cc4af4c0766e}{}\label{class_document_with_object_a97b7ac150c854626ceb8cc4af4c0766e}
+
+
+образобать действие пользователя 
+
 
 
 Implements \hyperlink{struct_i_proc_operation_a21afac17b66ccd9a1bf4c20ac71f3292}{I\+Proc\+Operation}.
