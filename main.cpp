@@ -8,11 +8,12 @@
 using namespace std;
 
 //------------------------------------------------------------------------------
+/// Интерфейс объекта 
 struct IObject
 {
   virtual void print() = 0;
 };
-
+/// Прямоугольник
 struct Rectangle : IObject
 {
   void print() override { 
@@ -22,7 +23,7 @@ struct Rectangle : IObject
     cout << "  ----  " << endl;
   }
 };
-
+/// Круг
 struct Circle : IObject
 {
   void print() override { 
@@ -34,6 +35,7 @@ struct Circle : IObject
 };
 
 //------------------------------------------------------------------------------
+/// получить имя со стандартного ввода
 static string get_name()
 {
   string name;
@@ -49,7 +51,7 @@ static string get_name()
   } while ( name.empty() );
   return name;
 }
-
+/// создать объект
 static std::pair<std::string, std::unique_ptr<IObject>> create_object() {
   // считываем тип
   int n = 0;
@@ -90,35 +92,45 @@ enum operation
   listall_obj = 6,
   _delete_obj = 7
 };
-
+/// интерфейс состояния конечного автомата
 struct IProcOperation {
+  /// Деструктор
   virtual ~IProcOperation() = default;
+  /// образобать действие пользователя
   virtual IProcOperation *process(operation op) = 0;
   
   void print(const char *s) {
     cout << " --> " << s << endl;
   }
 };
-
+/// Состояние - пустой документ
 class EmptyDocument : public IProcOperation
 {
 public:
+  /// Конструктор
   EmptyDocument() = default;
+  /// Деструктор
   ~EmptyDocument() = default;
 
+  /// образобать действие пользователя
   IProcOperation *process(operation op) override;
 };
-
+/// Состояние - не пустой документ (содержет сколько-то объектов)
 class DocumentWithObject : public IProcOperation
 {
 public:
   using objects_t = std::map<std::string, std::unique_ptr<IObject>>;
+  /// Конструктор
   DocumentWithObject(objects_t && d) : m_objects(std::move(d)) {} ;
+  /// Конструктор
   DocumentWithObject() = default;
+  /// Деструктор
   ~DocumentWithObject() = default;
 
+  /// образобать действие пользователя
   IProcOperation *process(operation op) override;
 
+  /// Добавить объект
   bool insert(std::pair<std::string, std::unique_ptr<IObject>> data) {
     if ( data.second ) {
       auto ret = m_objects.insert(std::move(data));
@@ -130,7 +142,7 @@ public:
     }
     return false;
   }
-
+  /// удалить объект
   bool delete_obj() {
     auto it = m_objects.find(get_name());
     if ( it == m_objects.end() ) {
